@@ -31,6 +31,8 @@ Users who don't activate their accounts, in the case of spammers, are still bein
 = Requirements =
 Apparently, the activation of RS Captcha and Buddypress plugins is required for this plugin to work.
 
+You can also check [this page](http://b-ernie.com/really-simple-captcha-for-buddypress-plugin "b-ernie.com") out for updates.
+
 
 == Installation ==
 
@@ -53,6 +55,10 @@ Please post your queries on the Support page.
 = I can't make Buddypress or Really Simple Captcha to work. =
 
 Please post your queries on **their** support page.
+
+
+You can also check [this page](http://b-ernie.com/really-simple-captcha-for-buddypress-plugin "b-ernie.com") out for more info.
+
 
 == Screenshots ==
 
