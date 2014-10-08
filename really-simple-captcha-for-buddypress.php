@@ -91,7 +91,7 @@ else {
 	function b_rcaptcha_bpress_admin_notice() {
 	?>
 	<div class="error">
-		<p>RSCaptcha for Buddypress plugin not installed: Installation of <a href="https://wordpress.org/plugins/really-simple-captcha/" target="_blank">Really Simple Captcha</a> and <a href="https://wordpress.org/plugins/buddypress/" target="_blank">Buddypress</a> plugins are required in order for this plugin to work.</p>
+		<p>RSCaptcha for Buddypress plugin not installed: The plugin was not installed because neither <a href="https://wordpress.org/plugins/really-simple-captcha/" target="_blank">Really Simple Captcha</a> or <a href="https://wordpress.org/plugins/buddypress/" target="_blank">Buddypress</a> plugin is not <strong>activated</strong>. Please activate them first for this to work.</p>
 	</div>
 	<?php
 	if ( isset( $_GET['activate'] ) )

@@ -4,7 +4,7 @@ Donate link: http://b-ernie.com
 Tags: buddypress, really simple captcha, captcha, registration
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,8 @@ Users who don't activate their accounts, in the case of spammers, are still bein
 = Requirements =
 Apparently, the activation of RS Captcha and Buddypress plugins is required for this plugin to work.
 
+You can also check [this page](http://b-ernie.com/really-simple-captcha-for-buddypress-plugin "b-ernie.com") out for updates.
+
 
 == Installation ==
 
@@ -46,6 +48,10 @@ Apparently, the activation of RS Captcha and Buddypress plugins is required for 
 
 == Frequently Asked Questions ==
 
+= I have installed both RS Captcha and Buddypress but it's still not working. =
+
+Make sure you have =activated= both plugins. Otherwise, it won't work.
+
 = I have a problem with the plugin. =
 
 Please post your queries on the Support page.
@@ -60,11 +66,15 @@ Please post your queries on **their** support page.
 
 
 == Changelog ==
+= 1.1 =
+* Changed the 'confusing' warning message. (minimal change)
 
 = 1.0 =
 * First version of the plugin.
 
 == Upgrade Notice ==
+= 1.1 =
+No need to upgrade if you don't find the warning message confusing.
 
 = 1.0 =
 No need to upgrade yet. Just download.
