@@ -3,13 +3,13 @@
  * Plugin Name: Really Simple CAPTCHA for Buddypress
  * Plugin URI: http://b-ernie.com
  * Description: Integrates the Really Simple Captcha plugin to the Buddypress Registration page. Thus, it requires the activation of both RS Captcha and Buddypress plugins before it will work.
- * Version: 1.0
- * Author: Bernie Bustamante
+ * Version: 1.2
+ * Author: Bernie Tisbe
  * Author URI: http://b-ernie.com
  * License: GPL2
  */
  
-/*  Copyright 2014  Bernie Bustamante  (email : b@b-ernie.com)
+/*  Copyright 2015  Bernie Bustamante  (email : b@b-ernie.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -25,8 +25,10 @@
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
+$active_plugins = apply_filters('active_plugins',get_option('active_plugins'));
 
-if (class_exists( 'ReallySimpleCaptcha' ) && class_exists( 'BuddyPress' )) {
+
+if (in_array('buddypress/bp-loader.php', $active_plugins) && in_array('really-simple-captcha/really-simple-captcha.php', $active_plugins)) {
 	
 	/** Display the form **/
 	add_action( 'bp_account_details_fields', 'b_rcaptcha_bpress_bp_register_captcha');
@@ -91,7 +93,7 @@ else {
 	function b_rcaptcha_bpress_admin_notice() {
 	?>
 	<div class="error">
-		<p>RSCaptcha for Buddypress plugin not installed: The plugin was not installed because neither <a href="https://wordpress.org/plugins/really-simple-captcha/" target="_blank">Really Simple Captcha</a> or <a href="https://wordpress.org/plugins/buddypress/" target="_blank">Buddypress</a> plugin is not <strong>activated</strong>. Please activate them first for this to work.</p>
+		<p>RSCaptcha for Buddypress plugin not installed: The plugin failed to install or was deactivated because neither <a href="https://wordpress.org/plugins/really-simple-captcha/" target="_blank">Really Simple Captcha</a> or <a href="https://wordpress.org/plugins/buddypress/" target="_blank">Buddypress</a> plugin is not <strong>activated</strong>. Please activate them first for this to work.</p>
 	</div>
 	<?php
 	if ( isset( $_GET['activate'] ) )
